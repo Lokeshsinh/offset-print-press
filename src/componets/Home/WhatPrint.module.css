@@ -73,5 +73,91 @@
   border-radius: 12px;
 }
 .printDetails{
-    z-index: 1;
+}
+
+.overlay{
+    position: absolute;
+    padding: 19px 28px;
+    top: 79.5%;
+    width: 100%;
+    height: 78px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.473);
+    z-index: 2;
+    cursor: pointer;
+}
+.overlay h2{
+    font-size: 20px;
+    color: white;
+    font-weight: 550;
+}
+
+.printline {
+  width: 99px;
+  height: 2px;
+  background-color: white;
+  margin-top: 12px;
+  display: block;
+}
+.printline:hover{
+    display: block;
+}
+.overlay p {
+  margin-top: 19px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.printItem:hover .overlay p {
+  opacity: 1;
+}
+
+/* smooth transition */
+.overlay {
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+.learn{
+    font-size: 17px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    color: white;
+    gap: 10px;
+}
+
+
+/* hide extra content initially */
+.overlay p,
+.overlay span:last-child {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.printItem:hover .overlay {
+  top: 50%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* show content on hover */
+.printItem:hover .overlay p,
+.printItem:hover .overlay span:last-child {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* optional: spacing for better look */
+.printItem:hover .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }

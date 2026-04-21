@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './WhatPrint.module.css'
 import { motion } from 'framer-motion';
+import { MoveRight } from 'lucide-react';
 import offset from '../../assets/offprint.jpg'
 import screen from '../../assets/screenprint.jpg'
 import digital from '../../assets/digitalprint.jpg'
@@ -33,7 +34,7 @@ function WhatPrint() {
         {
             id: 4,
             img: station,
-            title: "Stationery SupplyOffset Printing",
+            title: "Stationery Supply",
             description: "Office stationery, printed notebooks, files, folders & receipt books.",
         },
 
@@ -51,11 +52,19 @@ function WhatPrint() {
                 <div className={styles.printgrid}>
                     {printTypes.map((print) => (
                         <>
-                        <div className={styles.printItem} key={print.id}>
-                            <img src={print.img} alt={print.title} />
-                            <h1>Hello</h1>
-                        </div>
-                   </>
+                            <motion.div initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }} className={styles.printItem} key={print.id}>
+                                <img src={print.img} alt={print.title} />
+                                <div className={styles.overlay}>
+                                    <h2>{print.title}</h2>
+                                    <label className={styles.printline}></label>
+                                    <p>{print.description}</p>
+                                    <span className={styles.learn}>Learn more <MoveRight size={23} className={styles.arrow} /></span>
+                                </div>
+                            </motion.div>
+                        </>
                     ))}
                 </div>
             </div>
