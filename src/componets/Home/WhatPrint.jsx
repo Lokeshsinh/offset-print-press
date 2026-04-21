@@ -61,7 +61,7 @@ function WhatPrint() {
                                     <h2>{print.title}</h2>
                                     <label className={styles.printline}></label>
                                     <p>{print.description}</p>
-                                    <span className={styles.learn}>Learn more <MoveRight size={23} className={styles.arrow} /></span>
+                                    <span className={styles.learn}>Learn more <MoveRight size={20} className={styles.arrow} /></span>
                                 </div>
                             </motion.div>
                         </>

@@ -161,3 +161,138 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
+/* ===== LARGE SCREENS (Big desktops) ===== */
+@media (min-width: 1440px) {
+  .whatPrintHeading h1 {
+    font-size: 65px;
+  }
+
+  .printItem {
+    height: 420px;
+  }
+}
+
+
+/* ===== LAPTOPS ===== */
+@media (max-width: 1200px) {
+  .printgrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .whatPrintHeading h1 {
+    font-size: 45px;
+  }
+
+  .WhatPrint {
+    padding: 50px 40px;
+  }
+}
+
+
+/* ===== TABLETS ===== */
+@media (max-width: 992px) {
+  .printgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whatPrintHeading h1 {
+    font-size: 38px;
+  }
+
+  .whatPrintHeading h3 {
+    font-size: 18px;
+  }
+
+  .printItem {
+    height: 340px;
+  }
+}
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .WhatPrint {
+    padding: 40px 20px;
+  }
+
+  .printgrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .whatPrintHeading h1 {
+    font-size: 30px;
+  }
+
+  .overlay {
+    top: 65%;
+    height: 35%;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .overlay h2 {
+    font-size: 18px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  .learn {
+    justify-content: center;
+  }
+  /* .overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } */
+
+
+
+}
+@media (max-width: 768px) {
+
+  .printline {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+
+  .whatPrintHeading h1 {
+    font-size: 24px;
+  }
+
+  .whatPrintHeading h3 {
+    font-size: 16px;
+  }
+
+  .printItem {
+    height: 300px;
+  }
+
+  .overlay {
+    top: 70%;
+    height: 30%;
+  }
+
+  .overlay h2 {
+    font-size: 16px;
+  }
+
+  .overlay p {
+    font-size: 13px;
+  }
+
+  .learn {
+    font-size: 14px;
+  }
+}
