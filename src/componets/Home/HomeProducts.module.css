@@ -1,0 +1,97 @@
+.HomeProducts{
+    display: flex;
+    padding: 59px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  #f7f7f75a;
+}
+
+.HomeProductsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.HomeProductsContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.HomeProductsContent h1{
+    margin-top: 27px;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.HomeProductsContent span{
+    width: 155px;
+    height: 2px;
+    background-color: #D3000F;
+    margin-top: 17px;
+}
+
+
+.HomeProductsItems{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.HomeProductsImg{
+    width: 340px;
+    height: 410px;
+    position: relative;
+    
+}
+
+.HomeProductsImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.HomeProductsTitle{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.397);
+    color: white;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.HomeProductsTitle h1{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.HomeProductsuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.HomeProductsImg1{
+    width: 340px;
+    height: 195px;
+    position: relative;
+}
+
+.HomeProductsImg1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
