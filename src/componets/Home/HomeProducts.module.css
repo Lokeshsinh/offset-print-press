@@ -8,6 +8,7 @@
     background-color:  #f7f7f75a;
 }
 
+
 .HomeProductsContainer{
     display: flex;
     justify-content: center;
@@ -94,4 +95,120 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+/* ===== Default already good for desktop ===== */
+
+
+/* 🔶 Large Tablets (1024px) */
+@media (max-width: 1024px) {
+  .HomeProducts {
+    padding: 50px 30px;
+  }
+
+  .HomeProductsContent h1 {
+    font-size: 42px;
+  }
+
+  .HomeProductsItems {
+    gap: 15px;
+  }
+
+  .HomeProductsImg,
+  .HomeProductsImg1 {
+    width: 280px;
+  }
+
+  .HomeProductsImg {
+    height: 360px;
+  }
+
+  .HomeProductsImg1 {
+    height: 170px;
+  }
+}
+
+
+/* 🔷 Tablets (768px) */
+@media (max-width: 768px) {
+  .HomeProducts {
+    padding: 40px 20px;
+  }
+
+  .HomeProductsContent h1 {
+    font-size: 34px;
+  }
+
+  .HomeProductsItems {
+    flex-direction: column; /* stack layout */
+    gap: 20px;
+  }
+
+  .HomeProductsuser {
+    flex-direction: row; /* middle becomes side-by-side */
+    gap: 15px;
+  }
+
+  .HomeProductsImg,
+  .HomeProductsImg1 {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .HomeProductsImg {
+    height: 300px;
+  }
+
+  .HomeProductsImg1 {
+    height: 150px;
+  }
+}
+
+
+/* 📱 Mobile (480px) */
+@media (max-width: 480px) {
+  .HomeProducts {
+    padding: 30px 15px;
+  }
+
+  .HomeProductsContent h1 {
+    font-size: 26px;
+  }
+
+  .HomeProductsContent span {
+    width: 100px;
+  }
+
+  .HomeProductsuser {
+    flex-direction: column; /* stack again */
+  }
+
+  .HomeProductsImg {
+    height: 250px;
+  }
+
+  .HomeProductsImg1 {
+    height: 250px;
+  }
+
+  .HomeProductsTitle h1 {
+    font-size: 16px;
+  }
+}
+
+
+/* 📱 Small Mobile (360px) */
+@media (max-width: 360px) {
+  .HomeProductsContent h1 {
+    font-size: 22px;
+  }
+
+  .HomeProductsImg {
+    height: 220px;
+  }
+
+  .HomeProductsImg1 {
+    height: 120px;
+  }
 }

@@ -5,6 +5,7 @@ import label from '../../assets/HomeProducts/lable.jpg'
 import poster from '../../assets/HomeProducts/potser.webp'
 import book from '../../assets/HomeProducts/book.jpg'
 import { motion } from 'framer-motion';
+import classBook  from '../../assets/HomeProducts/class.jpeg'
 
 function HomeProducts() {
     return (
