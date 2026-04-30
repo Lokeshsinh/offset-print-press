@@ -52,10 +52,10 @@ function WhatPrint() {
                 <div className={styles.printgrid}>
                     {printTypes.map((print) => (
                         <>
-                            <motion.div initial={{ opacity: 0, y: 100 }}
+                            <motion.div    key={print.id} initial={{ opacity: 0, y: 100 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }} className={styles.printItem} key={print.id}>
+                                transition={{ duration: 1.4, delay: 0.3, ease: "easeOut" }} className={styles.printItem}>
                                 <img src={print.img} alt={print.title} />
                                 <div className={styles.overlay}>
                                     <h2>{print.title}</h2>
