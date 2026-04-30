@@ -1,14 +1,43 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Home.module.css'
 import banner from '../../assets/back.jpg'
 import { MoveRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import back from '../../assets/back.jpg'
+import id from '../../assets/banner/id1.jpg';
+import lable from '../../assets/banner/lable.jpg'
+import id2 from '../../assets/banner/id2.jpg'
+import lable2 from '../../assets/banner/lable1.jpg'
 
 
 function Home() {
+    const images = [back, id2, lable2]
+    const [currentSlide, setCurrentSlide] = useState(0)
+
+    const nextSlide = () => {
+        setCurrentSlide((prev) => (prev + 1) % images.length)
+    }
+
+ const prevSlide = () => {
+        setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+    };
+
+    useEffect(() => {
+        const interval = setInterval(nextSlide, 4000);
+        return () => clearInterval(interval);
+    }, []); 
     return (
         <section className={styles.printHome}>
-            <div className={styles.printbanner}>
+            <div className={styles.printbanner} style={{
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.71)), url(${images[currentSlide]})`,
+                 backgroundSize: "cover",
+                 backgroundPosition:"center",
+                 backgroundRepeat:"no-repeat"
+            }}>
+                <div className={styles.sliderButtons}>
+                    <button onClick={prevSlide}>‹</button>
+                    <button onClick={nextSlide}>›</button>
+                </div>
                 <motion.div className={styles.printcontent}>
                     <motion.div className={styles.printtext} initial={{ opacity: 0, y: 60 }}
                         whileInView={{ opacity: 1, y: 0 }}
