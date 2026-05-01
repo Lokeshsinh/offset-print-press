@@ -56,7 +56,7 @@ function HomeAbout() {
                             <p>About Us</p>
                             <h1>A family-run press <br />built on quality.</h1>
                             <div className={styles.homeAboutpara}>
-                                <p>Founded by Ram Paul ji, Saini Offset Printing Press began as a small neighbourhood
+                                <p>Founded by Ram Paul ji, Saini Offset Printing Press began as a small neighbourhood
                                     press in Bari Brahmana with one promise  never compromise on print quality.</p>
                                 <p>For over two decades we've served businesses, shops, schools and individuals across
                                     Jammu — from premium visiting cards and bill books to bulk brochures, stickers and packaging.</p>
