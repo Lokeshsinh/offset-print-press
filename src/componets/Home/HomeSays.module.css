@@ -1,0 +1,235 @@
+.HomeSays{
+    width: 100%;
+    background-color: #f7f7f75a;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeSaysBack{
+    width: 100%;
+    height: 45vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.621), rgba(0, 0, 0, 0.689)), url('../../assets/HomeWork/file.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.HomeSaysTitle{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.HomeSaysTitle h1{
+    font-size: 55px;
+    color: white;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.HomeSaysTitle p{
+    margin-top: 1.5rem;
+    text-align: center;
+    max-width: 600px;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+.HomeSaysButton{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.HomeSaysGetStarted {
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 530;
+    color: white;
+    background-color: #75040c;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.HomeSaysGetStarted::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.HomeSaysGetStarted:hover::before {
+    transform: scaleX(1);
+}
+
+.HomeSaysGetStarted:hover {
+    color: #75040c;
+    transform: translateY(-2px);
+}
+
+
+.HomeSaysLearnMore {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 530;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    background-color: #25D366; /* WhatsApp green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.HomeSaysLearnMore::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+
+.HomeSaysLearnMore:hover::before {
+    transform: scaleX(1);
+}
+
+.HomeSaysLearnMore:hover {
+    color:  #25D366;
+    transform: translateY(-2px);
+}
+.HomeSaysLearnMore i {
+    font-size: 18px;
+}
+
+/* Hover effect */
+.HomeSaysLearnMore:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-2px);
+}
+
+
+
+@media (max-width: 576px) {
+
+    .HomeSays {
+        padding: 30px 20px;
+    }
+
+    .HomeSaysBack {
+        height: auto;
+        padding: 25px 15px;
+        background-attachment: scroll; /* fix mobile */
+    }
+
+    .HomeSaysTitle h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .HomeSaysTitle p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .HomeSaysButton {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .HomeSaysGetStarted,
+    .HomeSaysLearnMore {
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .HomeSays {
+        padding: 40px 30px;
+    }
+
+    .HomeSaysBack {
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .HomeSaysTitle h1 {
+        font-size: 36px;
+    }
+
+    .HomeSaysTitle p {
+        font-size: 15px;
+    }
+
+    .HomeSaysButton {
+        gap: 15px;
+    }
+}
+
+
+
+
+@media (max-width: 992px) {
+
+    .HomeSays {
+        padding: 45px 40px;
+    }
+
+    .HomeSaysBack {
+        height: auto;
+        padding: 35px 25px;
+    }
+
+    .HomeSaysTitle h1 {
+        font-size: 42px;
+    }
+
+    .HomeSaysTitle p {
+        font-size: 16px;
+    }
+}
+
+

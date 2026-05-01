@@ -5,6 +5,7 @@ import HomeAbout from '../componets/Home/HomeAbout';
 import HomeProducts from '../componets/Home/HomeProducts';
 import HomePrint from '../componets/Home/HomePrint';
 import HomeSays from '../componets/Home/HomeSays';
+import  HomeWork from '../componets/Home/HomeWork'
 
 function HomePage() {
 
@@ -16,6 +17,7 @@ function HomePage() {
         <HomeAbout />
         <HomeProducts />
         <HomePrint />
+        <HomeWork />
         <HomeSays />
         </>
      );
