@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Navbar.module.css'
 import logo from '../../assets/spp1.png'
+import { NavLink } from 'react-router'   // ← only NavLink, removed Link
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -17,31 +18,20 @@ function Navbar() {
 
                     {/* Links */}
                     <div className={`${styles.navLinks} ${menuOpen ? styles.active : ''}`}>
-                        <ul><li onClick={() => setMenuOpen(false)}>Home</li></ul>
-                        <ul><li onClick={() => setMenuOpen(false)}>About</li></ul>
-                        <ul><li onClick={() => setMenuOpen(false)}>Service</li></ul>
-                        <ul><li onClick={() => setMenuOpen(false)}>Portfolio</li></ul>
-                        <ul><li onClick={() => setMenuOpen(false)}>Contact</li></ul>
+                        <ul><li onClick={() => setMenuOpen(false)}><NavLink to="/" className={({ isActive }) => isActive ? styles.navActive : ''}>Home</NavLink></li></ul>
+                        <ul><li onClick={() => setMenuOpen(false)}><NavLink to="/about" className={({ isActive }) => isActive ? styles.navActive : ''}>About</NavLink></li></ul>
+                        <ul><li onClick={() => setMenuOpen(false)}><NavLink to="/service" className={({ isActive }) => isActive ? styles.navActive : ''}>Service</NavLink></li></ul>
+                        <ul><li onClick={() => setMenuOpen(false)}><NavLink to="/portfolio" className={({ isActive }) => isActive ? styles.navActive : ''}>Portfolio</NavLink></li></ul>
+                        <ul><li onClick={() => setMenuOpen(false)}><NavLink to="/contact" className={({ isActive }) => isActive ? styles.navActive : ''}>Contact</NavLink></li></ul>
 
-                        {/* Mobile Button */}
-                        <button 
-                            className={styles.mobileBtn}
-                            onClick={() => setMenuOpen(false)}
-                        >
+                        <button className={styles.mobileBtn} onClick={() => setMenuOpen(false)}>
                             Get Quote
                         </button>
                     </div>
 
-                    {/* Desktop Button */}
-                    <button className={styles.navButton}>
-                        Get Quote
-                    </button>
+                    <button className={styles.navButton}>Get Quote</button>
 
-                    {/* Hamburger */}
-                    <div 
-                        className={styles.hamburger}
-                        onClick={() => setMenuOpen(!menuOpen)}
-                    >
+                    <div className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
                         {menuOpen ? '✕' : '☰'}
                     </div>
 

@@ -1,15 +1,16 @@
 @import "tailwindcss";
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  z-index: -1;
+  /* REMOVE z-index: -1 from here */
 }
 
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
 }
