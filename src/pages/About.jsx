@@ -2,6 +2,7 @@ import React from 'react'
 import AboutBanner from '../componets/About/AboutBanner';
 import AboutWho from '../componets/About/AboutWho';
 import AboutExp from '../componets/About/AboutExp';
+import AboutCards from '../componets/About/AboutCards';
 
 function About() {
     return (
@@ -9,6 +10,7 @@ function About() {
         <AboutBanner />
         <AboutWho />
         <AboutExp />
+        <AboutCards />
         </>
     );
 }
