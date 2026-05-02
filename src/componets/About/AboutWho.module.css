@@ -1,0 +1,305 @@
+.AboutWho{
+    width: 100%;
+    background-color: #f7f7f75a;
+    padding: 50px 60px;
+}
+.AboutWhoContainer{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.AboutWhoText{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.AboutWhoText h4{
+    font-size: 22px;
+    color: #D3000F;
+    font-weight: 400;
+}
+
+.AboutWhoText h1{
+    margin-top: 5px;
+    font-size: 55px;
+    font-weight: 500;
+}
+.AboutWhoText p{
+    margin-top: 5px;
+    max-width: 550px;
+    font-size: 16px;
+    font-size: 16px;
+    color: #000000a1;
+}
+
+.AboutWhoText button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 530;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* sliding layer */
+.AboutWhoText button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white; 
+    border: 1px solid black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+
+    z-index: -1;
+}
+
+/* hover effect */
+.AboutWhoText button:hover::before {
+    transform: scaleX(1);
+}
+
+.AboutWhoText button:hover {
+    color: black;
+    border: 1px solid black;
+}
+
+
+/* Image */
+.AboutWhoImg {
+    width: 500px;
+    height: 400px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+.AboutWhoImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.AboutCards{
+    position: absolute;
+    bottom: -20px;
+    width: 253px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: floatY 2.5s ease-in-out infinite;
+}
+@keyframes floatY {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); } /* move up */
+    100% { transform: translateY(0); }     /* back down */
+}
+.AboutCards span{
+    padding: 9px;
+    background-color: rgb(255, 115, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.AboutWhoCardText{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+}
+.AboutWhoCardText h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.AboutWhoCardText p{
+    font-size: 14px;
+    color: #000000a1;
+    text-transform: uppercase;
+}
+
+
+
+
+@media (max-width: 992px) {
+
+    .AboutWho {
+        padding: 50px 40px;
+    }
+
+    .AboutWhoText h1 {
+        font-size: 42px;
+    }
+
+    .AboutWhoImg {
+        width: 420px;
+        height: 340px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .AboutWho {
+        padding: 40px 30px;
+    }
+
+    .AboutWhoContainer {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .AboutWhoText {
+        align-items: center;
+        text-align: center;
+    }
+
+    .AboutWhoText p {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .AboutWhoImg {
+        width: 100%;
+        max-width: 450px;
+        height: 320px;
+    }
+
+    .AboutCards {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 576px) {
+
+    .AboutWho {
+        padding: 30px 20px;
+    }
+
+    .AboutWhoText h4 {
+        font-size: 18px;
+    }
+
+    .AboutWhoText h1 {
+        font-size: 28px;
+    }
+
+    .AboutWhoText p {
+        font-size: 14px;
+    }
+
+    .AboutWhoText button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .AboutWhoImg {
+        height: 260px;
+    }
+
+    .AboutCards {
+        width: 200px;
+        padding: 8px;
+        bottom: -15px;
+    }
+
+    .AboutWhoCardText h4 {
+        font-size: 16px;
+    }
+
+    .AboutWhoCardText p {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 460px) {
+
+    .AboutWhoText h1 {
+        font-size: 24px;
+    }
+
+    .AboutWhoImg {
+        height: 230px;
+    }
+
+    .AboutCards {
+        width: 140px;
+        gap: 2px;
+    }
+
+    .AboutCards span{
+        padding: 2px;
+    }
+    .icons{
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .AboutWho {
+        padding: 20px 10px;
+    }
+
+    .AboutWhoText h1 {
+        font-size: 20px;
+    }
+
+    .AboutWhoText p {
+        font-size: 12px;
+    }
+
+    .AboutWhoImg {
+        height: 200px;
+    }
+
+   .AboutCards {
+        width: 140px;
+        gap: 2px;
+    }
+
+    .AboutCards span{
+        padding: 2px;
+    }
+    .icons{
+        font-size: 13px;
+    }
+
+    .AboutWhoCardText h4 {
+        font-size: 14px;
+    }
+
+    .AboutWhoCardText p {
+        font-size: 11px;
+    }
+}

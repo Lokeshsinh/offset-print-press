@@ -10,7 +10,7 @@
 .HomeSaysBack{
     width: 100%;
     height: 45vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.621), rgba(0, 0, 0, 0.689)), url('../../assets/HomeWork/file.jpg') no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.621), rgba(0, 0, 0, 0.689)), url('../../assets/HomeWork/file1.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;

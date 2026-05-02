@@ -21,6 +21,9 @@ function HomeAbout() {
     return (
         <>
             <section className={styles.homeAbout}>
+                 <div className={styles.printTitles}>
+                    <h1>Saini Offset <br />Printing Press</h1>
+                </div>
                 <div className={styles.homeAboutFlex}>
                     {/* image slider */}
 

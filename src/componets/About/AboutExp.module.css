@@ -1,0 +1,223 @@
+.aboutExprience{
+    width: 100%;
+    background-color: #f7f7f75a;
+    padding: 50px 60px;
+}
+.aboutExprienceHeading{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.aboutExprienceHeading h1{
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.aboutExprienceHeading span{
+    width: 155px;
+    height: 2px;
+    background-color: #D3000F;
+    margin-top: 17px;
+}
+
+
+.aboutExprienceContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 5rem;
+}
+.aboutExprienceItem{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+.aboutExprienceImg1{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+.aboutExprienceImage{
+    width: 260px;
+    height: 165px;
+    background-color: gray;
+    border-radius: 5px;
+}
+.aboutExprienceImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*  text  */
+.aboutExpreinceText{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.aboutExpreinceText h1{
+     margin-top: 5px;
+    font-size: 55px;
+    font-weight: 500;
+}
+.aboutExpreinceText p{
+    max-width: 550px;
+}
+
+
+
+@media (max-width: 992px) {
+
+    .aboutExprience {
+        padding: 50px 40px;
+    }
+
+    .aboutExprienceHeading h1 {
+        font-size: 42px;
+    }
+
+    .aboutExprienceContent {
+        gap: 40px;
+    }
+
+    .aboutExprienceImage {
+        width: 220px;
+        height: 150px;
+    }
+
+    .aboutExpreinceText h1 {
+        font-size: 42px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .aboutExprience {
+        padding: 40px 30px;
+    }
+
+    .aboutExprienceContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .aboutExprienceItem {
+        align-items: center;
+    }
+
+    .aboutExprienceImg1 {
+        justify-content: center;
+    }
+
+    .aboutExpreinceText {
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutExpreinceText p {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .aboutExprience {
+        padding: 30px 20px;
+    }
+
+    .aboutExprienceHeading h1 {
+        font-size: 28px;
+    }
+
+    .aboutExprienceImage {
+        width: 100%;
+        max-width: 280px;
+        height: 160px;
+    }
+
+    .aboutExprienceImg1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutExpreinceText h1 {
+        font-size: 28px;
+    }
+
+    .aboutExpreinceText p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 460px) {
+
+    .aboutExprienceHeading h1 {
+        font-size: 24px;
+    }
+
+    .aboutExprienceImage {
+        max-width: 240px;
+        height: 140px;
+    }
+
+    .aboutExpreinceText h1 {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 460px) {
+
+    .aboutExprienceHeading h1 {
+        font-size: 24px;
+    }
+
+    .aboutExprienceImage {
+        max-width: 240px;
+        height: 140px;
+    }
+
+    .aboutExpreinceText h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .aboutExprience {
+        padding: 20px 10px;
+    }
+
+    .aboutExprienceHeading h1 {
+        font-size: 20px;
+    }
+
+    .aboutExprienceImage {
+        max-width: 200px;
+        height: 120px;
+    }
+
+    .aboutExpreinceText h1 {
+        font-size: 20px;
+    }
+
+    .aboutExpreinceText p {
+        font-size: 12px;
+    }
+}
