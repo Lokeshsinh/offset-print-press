@@ -1,0 +1,156 @@
+.AboutBanner{
+    width: 100%;
+    min-height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.667)), url('../../assets/Service/service.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    padding: 50px 60px;
+}
+
+.AboutBannerText{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 37px;
+}
+.AboutBannerText h1{
+    margin-top: 3.5rem;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+
+.AboutBannerText p{
+    max-width: 700px;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.AboutBannerText button{
+    text-decoration: none;
+ width: 230px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.AboutBannerText button:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* responsive */
+
+@media (max-width: 992px) {
+
+    .AboutBanner {
+        padding: 50px 40px;
+    }
+
+    .AboutBannerText h1 {
+        font-size: 55px;
+    }
+
+    .AboutBannerText p {
+        font-size: 15px;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .AboutBanner {
+        padding: 30px;
+    }
+
+    .AboutBannerText h1 {
+        font-size: 40px;
+    }
+
+    .AboutBannerText p {
+        font-size: 14px;
+    }
+
+    .AboutBannerText button {
+        width: 200px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .AboutBanner {
+        padding: 30px 20px;
+    }
+
+    .AboutBannerText {
+        align-items: center;
+        text-align: center;
+    }
+
+    .AboutBannerText h1 {
+        font-size: 28px;
+        margin-top: 1.5rem;
+    }
+
+    .AboutBannerText p {
+        font-size: 13px;
+    }
+
+    .AboutBannerText button {
+        width: 100%;
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .AboutBannerText h1 {
+        font-size: 24px;
+    }
+
+    .AboutBannerText p {
+        font-size: 12.5px;
+    }
+
+    .AboutBannerText button {
+        height: 42px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .AboutBanner {
+        padding: 20px 10px;
+    }
+
+    .AboutBannerText h1 {
+        font-size: 20px;
+    }
+
+    .AboutBannerText p {
+        font-size: 12px;
+    }
+
+    .AboutBannerText button {
+        height: 40px;
+        font-size: 12px;
+    }
+}
